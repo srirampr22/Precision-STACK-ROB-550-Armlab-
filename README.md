@@ -7,7 +7,6 @@
 ## Code structure
 
 ### Relavent 
-You do need to modify **some** of these files.
 - [install_scripts](install_scripts)
     - [install_scripts/config](install_scripts/config)
         - `rs_l515_launch.py` - to launch the camera
@@ -16,7 +15,7 @@ You do need to modify **some** of these files.
     - `install_Interbotix.sh` - to install arm related stuff
     - `install_LaunchFiles.sh` - to move the files under `/config` to where it should to be 
 - [launch](launch) - to store the launch files, details in [here](launch/README.md)
-- [src](src) - where you actually write code
+- [src](src)
     - `camera.py` - Implements the Camera class for the RealSense camera. 
         - Functions to capture and convert frames
         - Functions to load camera calibration data
@@ -37,15 +36,7 @@ You do need to modify **some** of these files.
         - The state machine is the heart of the controller
 - [config](config)
     - `rx200_dh.csv` - Contains the DH table for the RX200 arm
-        - You will need to fill this in
     - `rx200_pox.csv` - Containes the S list and M matrix for the RX200 arm.
-        - You will need to fill this in
-
-
-### Irrelavent
-Not need to touch these files.
-- [media](media) - where we store media that used for README instructions
-- [src/resource](src/resource) - where we store the additional files used in the project
 
 ## How to start?
 1. Go to [/install_scripts](install_scripts) and following the `README.md` instructions
